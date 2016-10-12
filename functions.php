@@ -67,3 +67,10 @@ require get_template_directory() . '/inc/bootstrap-wp-gallery.php';
 * Load WooCommerce functions.
 */
 require get_template_directory() . '/inc/woocommerce.php';
+
+
+/** 
+*  Autor Elvis
+*  Load Supports functions add theme(Metaboxes, PostTypes, Widgets, etc..)
+*/
+require get_template_directory() . '/inc/supports.php';
