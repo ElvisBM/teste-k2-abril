@@ -5,7 +5,9 @@
 */
 $autoinclude_base_dir = dirname(__FILE__) . '/';
 $autoinclude_folders = array(
-    'metaboxes/'
+	'post-types/',
+    'metaboxes/',
+    'widgets/'
 );
 foreach ($autoinclude_folders as $folder) {
     if (file_exists($autoinclude_base_dir . $folder)) {
