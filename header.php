@@ -24,12 +24,22 @@
 
 <div id="page" class="hfeed site">
     
+    <!-- ******************* The Sidebar Publicidade Top Area ******************* -->
+    <?php if ( is_active_sidebar( 'publicidade_top' ) ) : ?>
+       <div class="wrapper-fluid wrapper-navbar" id="wrapper-publicidade-top">
+            <div class="container">
+                <?php dynamic_sidebar( 'publicidade_top' ); ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    
+    
     <!-- ******************* The Navbar Area ******************* -->
     <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 	
         <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
 
-        <nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+        <nav class="navbar navbar-dark site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                             
 
                 <div class="container">
@@ -39,7 +49,7 @@
 
                                 <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 
-                                  <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".exCollapsingNavbar">
+                                <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".exCollapsingNavbar">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
@@ -67,8 +77,23 @@
                                     )
                             ); ?>
 
+                        <!-- Mais Acessados top -->
+                        <?php if ( is_active_sidebar( 'busca_menu_top' ) ) : ?>
+                           <div class="wrapper-fluid wrapper-navbar" id="wrapper-busca-menu-top">
+                                    <?php dynamic_sidebar( 'busca_menu_top' ); ?>
+                            </div>
+                        <?php endif; ?>
+
                 </div> <!-- .container -->
-            
+
+                <!-- Mais Acessados top -->
+                <?php if ( is_active_sidebar( 'mais_acessado_top' ) ) : ?>
+                    <div class="wrapper-fluid wrapper-navbar" id="wrapper-mais-acessado-top">
+                        <div class="container">
+                            <?php dynamic_sidebar( 'mais_acessado_top' ); ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
         </nav><!-- .site-navigation -->
         
     </div><!-- .wrapper-navbar end -->
