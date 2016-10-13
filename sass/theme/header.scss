@@ -1,0 +1,108 @@
+.site-navigation{
+	color: #000;
+	.container{
+		background-color: $brand-primary;
+		padding: 0px;
+	}
+
+	.navbar-toggle{
+		margin-top: 15px;
+
+		.icon-bar{
+			background: #fff;
+		}
+	}
+	
+
+}
+
+
+
+#wrapper-publicidade-top{
+	text-align: center;
+    margin: 20px;
+}
+
+#wrapper-navbar{
+	a{
+		color: #fff;
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+	#main-menu{
+		margin-top: 19px;
+	}
+
+	.dropdown-menu{
+		border:0px;
+		background: $brand-primary;
+	}
+
+
+
+	#wrapper-busca-menu-top{
+		width: 16%;
+    	float: right;
+    	margin-top: 20px;
+
+    	input{
+	    	&[type="search"]{
+	    		border: 0px;
+	    		padding: 5px;
+	    		vertical-align: middle;
+	    	}
+
+	    	&[type="submit"]{
+	    		border: 0px;
+			    position: relative;
+			    background: #fff;
+			    height: 34px;
+			    width: 20px;
+			    margin-left: -10px;
+			    vertical-align: middle;
+	    	}
+	    }
+
+	    i{
+    		margin-left: -25px;
+		    z-index: 999;
+		    position: relative;
+		    color: #999;
+    	}
+	}
+}
+
+
+#wrapper-mais-acessado-top{
+	color:#fff;
+
+	.container{
+		background: #1c2826;
+		padding: 0px;
+	}
+
+	h3{
+		font-size: 1em;
+		background: url(../images/icon_acessados.png);
+	    background-repeat: no-repeat;
+	    background-position-x: 100%;
+	    display: inline-block;
+	    padding: 5px 40px 6px 10px;
+	    background-color: $brand-primary;
+	    margin: 0px;
+	}
+
+	ul{
+		display: inline-block;
+		padding: 0px;
+    	margin: 0px;
+		li{
+			display: inline-block;
+			a{	
+				font-size: 1em;
+			    color: #fff;
+			    margin: 0px 8px;
+			}
+		}
+	}
+}
