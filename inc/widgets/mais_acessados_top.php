@@ -11,8 +11,8 @@ function mais_acessado_top_widgets_init() {
 		'id'            => 'mais_acessado_top',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="title">',
+		'after_title'   => '</h3>',
 	) );
 
 }
