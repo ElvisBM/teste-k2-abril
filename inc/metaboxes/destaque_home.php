@@ -30,12 +30,15 @@ class add_destaque_home{
 
         wp_nonce_field( 'save_'.__CLASS__, __CLASS__.'_noncename' );
 
-        $metadata = get_metadata('post', $post->ID);
+        $metadata = get_metadata( 'post', $post->ID );
         $destaque = $metadata['destaque'][0];
 
         ?>
-         <input type="checkbox" name="<?php echo __CLASS__ ?>[destaque][]" id="destaque_home" value="destaque" <?php if(preg_match("/destaque/i",$destaque)) echo 'checked="checked"'; ?>  />
-         <label for="destaque_home" >Destaque home</label>
+
+        <input type="hidden" name="<?php echo __CLASS__ ?>[destaque][]" id="destaque_home" value="" <?php if(preg_match("/destaque/i",$destaque)) echo 'checked="checked"'; ?>  />
+
+        <input type="checkbox" name="<?php echo __CLASS__ ?>[destaque][]" id="destaque_home" value="destaque" <?php if(preg_match("/destaque/i",$destaque)) echo 'checked="checked"'; ?>  />
+        <label for="destaque_home" >Destaque home</label>
       
       <?php
     }
