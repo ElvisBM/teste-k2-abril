@@ -39,7 +39,7 @@
 	
         <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
 
-        <nav class="navbar navbar-dark site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+        <nav class="navbar site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                             
 
                 <div class="container">
@@ -65,6 +65,22 @@
 
                             </div>
 
+                               <!-- Mais Acessados top -->
+                        <?php if ( is_active_sidebar( 'busca_menu_top' ) ) : ?>
+                           <div  id="wrapper-busca-menu-top">
+                                 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                                        <label>
+                                            <input type="search" class="search-field"
+                                                placeholder="<?php echo esc_attr_x( 'PESQUISAR', 'placeholder' ) ?>"
+                                                value="<?php echo get_search_query() ?>" name="s"
+                                                title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+                                        </label>
+                                        <input type="submit" class="fa fa-search" value=""/>
+                                        <i class="fa fa-search"></i>
+                                    </form>
+                            </div>
+                        <?php endif; ?>
+
                             <!-- The WordPress Menu goes here -->
                             <?php wp_nav_menu(
                                     array(
@@ -77,23 +93,20 @@
                                     )
                             ); ?>
 
+                     
+
                         <!-- Mais Acessados top -->
-                        <?php if ( is_active_sidebar( 'busca_menu_top' ) ) : ?>
-                           <div class="wrapper-fluid wrapper-navbar" id="wrapper-busca-menu-top">
-                                    <?php dynamic_sidebar( 'busca_menu_top' ); ?>
+                        <?php if ( is_active_sidebar( 'mais_acessado_top' ) ) : ?>
+                            <div class="wrapper-fluid wrapper-navbar" id="wrapper-mais-acessado-top">
+                                <div class="container">
+                                    <?php dynamic_sidebar( 'mais_acessado_top' ); ?>
+                                </div>
                             </div>
                         <?php endif; ?>
 
                 </div> <!-- .container -->
 
-                <!-- Mais Acessados top -->
-                <?php if ( is_active_sidebar( 'mais_acessado_top' ) ) : ?>
-                    <div class="wrapper-fluid wrapper-navbar" id="wrapper-mais-acessado-top">
-                        <div class="container">
-                            <?php dynamic_sidebar( 'mais_acessado_top' ); ?>
-                        </div>
-                    </div>
-                <?php endif; ?>
+                
         </nav><!-- .site-navigation -->
         
     </div><!-- .wrapper-navbar end -->
