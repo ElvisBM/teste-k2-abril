@@ -40,9 +40,14 @@ class add_promovido_publicidade{
         };
 
         ?>
+
+         <input type="hidden" name="<?php echo __CLASS__ ?>[promovido][]" id="promovido" value="0" <?php if(preg_match("/promovido/i",$promovido)) echo 'checked="checked"'; ?>  />
+         
          <input type="checkbox" name="<?php echo __CLASS__ ?>[promovido][]" id="promovido" value="promovido" <?php if(preg_match("/promovido/i",$promovido)) echo 'checked="checked"'; ?>  />
          <label for="promovido" >Promovido</label>
+
          <br>
+
          <label for="por" >Por: </label>
          <input type="text" name="<?php echo __CLASS__ ?>[por]" value="<?php echo $por; ?>" id="por" />
       
