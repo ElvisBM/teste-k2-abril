@@ -8,9 +8,10 @@ Tema criado com base no Understrap, para o teste K2, layout Abril.
 - Home -  index.php
 - Sass -  theme.scss, header.scss, responsive.scss
 - Support -  inc/supports.php
-- Metaboxes - destaque_home.php, promovido_publicidade.php
+- Metaboxes - destaque_home.php, promovido_publicidade.php ( Base para o teste 2 )
 - Widgets -  busca_menu_top.php, mais_acessados_top.php, publicidade_destaque_home.php, publicidade_top
 - Views Content(loop-templates) - content-destaque.php, content-home.php
+- Post-Types - cliente.php, pedido.php, produto.php( Base Teste 2)
 
 ## Configuração Widgets
 ![alt tag](https://github.com/ElvisBM/teste-k2-abril/blob/master/Captura%20de%20Tela%202016-10-13%20a%CC%80s%2012.39.58.png)
