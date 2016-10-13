@@ -1,5 +1,22 @@
 Start talking: [![Gitter](https://img.shields.io/gitter/room/holger1411/understrap.svg?maxAge=2592000?style=flat-square)](https://gitter.im/holger1411/understrap)
 
+## Sobre K2 Teste Abril
+
+Tema criado com base no Understrap, para o teste K2, layout Abril.
+
+## Estrutura
+- Home -  index.php
+- Sass -  theme.scss, header.scss, responsive.scss
+- Support -  inc/supports.php
+- Metaboxes - destaque_home.php, promovido_publicidade.php
+- Widgets -  busca_menu_top.php, mais_acessados_top.php, publicidade_destaque_home.php, publicidade_top
+- Views Content(loop-templates) - content-destaque.php, content-home.php
+
+## Configuração Widgets
+![alt tag](https://github.com/ElvisBM/teste-k2-abril/blob/master/Captura%20de%20Tela%202016-10-13%20a%CC%80s%2012.39.58.png)
+
+![alt tag](https://github.com/ElvisBM/teste-k2-abril/blob/master/Captura%20de%20Tela%202016-10-13%20a%CC%80s%2012.40.05.png)
+
 ## About
 
 I’m a huge fan of Underscores, Bootstrap, and Sass. Why not combine these into a solid WordPress Theme Framework?
